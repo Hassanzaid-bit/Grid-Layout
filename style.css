@@ -1,0 +1,66 @@
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(13, [gutter] 10px [col] 1fr);
+    grid-template-rows: [row] auto repeat(14, [gutter] 10px [row] 60px );
+}
+
+header{
+    grid-column: col / span gutter 12;
+    grid-row: 1 / 1;
+    text-align: center;
+}
+
+
+.box1{
+    grid-column: col 1 / span gutter 4;
+    grid-row: row 2 / span gutter 2;
+    background: tomato;
+}
+.box1:hover{
+    z-index: 10;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    grid-column: gutter 1 / span gutter 5;
+}
+
+.box2 {
+    grid-column: col 1 / span gutter 9;
+    grid-row: row 7 / span gutter 4;
+    background: aquamarine;
+}
+
+.box3 {
+    grid-column: col 1 /span gutter 12;
+    grid-row: row 11 /span gutter 3;
+    background: beige;
+}
+
+.box4{
+    grid-column: col 10 / span gutter 3;
+    grid-row: row 2 /span gutter 3;
+    background: antiquewhite;
+}
+
+.box5 {
+    grid-column: col 5 /span gutter 5;
+    grid-row: row 2 /span gutter 5;
+    background: blueviolet;
+}
+
+.box6 {
+    grid-column: col 1 /span gutter 4;
+    grid-row: row 4 / span gutter 3 ;
+    background: antiquewhite;
+}
+
+.box7 {
+    grid-column: col 10/ span gutter 3;
+    grid-row: row 5 / span gutter 4;
+    background: antiquewhite
+}
+
+.box8{
+    grid-column: col 10/ span gutter 3;
+    grid-row: row 9/ span gutter 2;
+    background: violet
+}
